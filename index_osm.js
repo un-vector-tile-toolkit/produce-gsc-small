@@ -24,7 +24,6 @@ const tippecanoe = spawn(tippecanoePath, [
   '--force',
   `--minimum-zoom=${minzoom}`,
   `--maximum-zoom=${maxzoom}`,
-  `--projection=EPSG:${projection}`
 ], { stdio: ['pipe', 'inherit', 'inherit'] })
 const downstream = tippecanoe.stdin
 
@@ -43,9 +42,8 @@ for (const src of srcs) {
       f = preprocessProperties(f)
       f.tippecanoe = {
         layer: src.layer,
-        projection: src.projection,
         minzoom: src.minzoom,
-        maxzoom: src.maxzoom,
+        maxzoom: src.maxzoom
       }
       downstream.write(`\x1e${JSON.stringify(f)}\n`)
     })
