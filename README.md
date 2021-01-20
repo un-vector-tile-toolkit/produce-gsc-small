@@ -7,7 +7,8 @@ vi config/default.hjson
 mkdir /data/small-zxy  
 
 npm install  
-node index.js
+node index_un.js
+node index_osm.js
 
 If you are running this at windows environment, please use docker (for tippecanoe).  
 
@@ -18,3 +19,4 @@ sudo apt install software-properties-common
 sudo apt-get install python3.6-dev  
 sudo add-apt-repository ppa:ubuntugis/ppa  
 sudo apt-get install gdal-bin  
+(for CentOS and RHEL, gdal installation method is different.)
