@@ -3,7 +3,7 @@
   maxzoom: 4
   projection: 4326
   host: xxx
-  port: 5432
+  port: 5433
   dbname:base
   user:test
   password:ddd
