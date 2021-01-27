@@ -81,7 +81,7 @@
     {
       sql: "select status,annotationclassid,textstring,geom from unhq_cm02_phyp_anno_l04"
       layer: lab_water
-      minzoom: 3 
+      minzoom: 1 
       maxzoom: 3
       projection: 4326
     }
